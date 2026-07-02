@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NorthStudio - Page Not Found.">
+    <title>404 // Page Not Found - NorthStudio</title>
+
+    <!-- Fonts: Playfair Display, Manrope, Geist Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Stylesheet (Shared) -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style>
+        .error-layout {
+            min-height: calc(100vh - 180px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 4rem 0;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-family: var(--font-mono);
+            font-size: 0.95rem;
+            color: var(--text-black);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .error-title {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--text-black);
+            margin-bottom: 1.5rem;
+        }
+
+        .error-desc {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand" aria-label="NorthStudio Home">
+                <span class="brand-playfair">NorthStudio</span>
+                <span class="brand-divider">//</span>
+                <span class="brand-mono">Error</span>
+            </a>
+
+            <nav class="site-nav">
+                <a href="cv.html" class="nav-link">[cv]</a>
+                <a href="index.html#focus" class="nav-link">[focus]</a>
+                <a href="index.html#timeline" class="nav-link">[timeline]</a>
+                <a href="index.html#now" class="nav-link">[now]</a>
+                <a href="index.html#faq" class="nav-link">[faq]</a>
+                <a href="index.html#connect" class="nav-link">[connect]</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="error-layout">
+            <div class="error-code">[error: 404_not_found]</div>
+            <h1 class="error-title">Page not found.</h1>
+            <p class="error-desc">The index could not resolve the requested location. It may have been relocated,
+                deleted, or the route spelling might be incorrect.</p>
+            <a href="index.html" class="btn btn-primary">Return to Index</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p class="footer-copy">&copy; 2026 NorthStudio. All rights reserved.</p>
+            <p class="footer-meta">Built with HTML5, CSS3, &amp; Geist Mono. Published via GitHub.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
