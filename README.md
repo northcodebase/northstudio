@@ -23,7 +23,7 @@ An independent software studio website and developer portfolio built with a focu
 
 ## 📂 Repository Structure
 
-```
+```text
 ├── index.html            # Main portfolio landing page
 ├── cv.html               # Developer Curriculum Vitae page (with Print support)
 ├── 404.html              # Custom branded 404 error page
