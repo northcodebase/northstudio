@@ -1,6 +1,6 @@
 # NorthStudio
 
-An independent software studio website and developer portfolio built with a focus on minimalist black-and-white digital design, responsive structures, and clean code.
+An independent software studio website and developer portfolio built with a focus on minimalist design, high-performance static pages, and clean code.
 
 ## 🔗 Project Links
 - **Repository:** [github.com/northcodebase/northstudio](https://github.com/northcodebase/northstudio)
@@ -10,30 +10,40 @@ An independent software studio website and developer portfolio built with a focu
 
 ## ✨ Features
 
-- **Monochrome Design System:** A clean, black-and-white theme built around curated typefaces (`Playfair Display`, `Manrope`, and `Geist Mono`).
-- **Curriculum Vitae (CV) Page:** A dedicated developer CV page featuring:
-  - An structured experience timeline and education background.
-  - Custom project listings with quick-reference technology tags.
-  - A clean, styled profile image placeholder box for portrait upload.
-- **PDF/Print Optimized Layout:** Special print styles (`@media print`) configured in the stylesheet to format the CV cleanly onto paper or standard PDF export without web navigation or footer elements.
-- **Expandable Platforms Grid:** A custom contact directory showing the top 6 profiles by default, with a smooth sliding accordion `[view more platforms]` toggle to reveal the remaining 10 profile links.
-- **Live Local System Clock:** A real-time clock situated in the site navigation bar showing the local time along with its GMT offset.
+- **Multi-page Architecture:** Split into focused, static pages for maintainability:
+  - `index.html`: Studio overview, core ethos, and featured catalog entry.
+  - `about.html`: Philosophy, principles, development workflows, stack, FAQ, and timeline.
+  - `projects.html`: Interactive catalog listing genuine active developments (NorthTracks, NorthPass, Northline Icons) with status badges and metadata grids.
+  - `now.html`: Focused monthly status update page (/now movement).
+  - `cv.html`: Simplified developer CV with specialized print layouts.
+  - `404.html`: Custom branded page error handler.
+- **Monochrome Theme System:** Toggle between dark and light themes. State persists across pages using `localStorage`.
+- **Keyboard & Reader Accessible:** Fluid font sizing using `clamp()`, distinct focus rings (`:focus-visible`), ARIA descriptors, and header "Skip to Content" paths.
+- **Responsive Mobile Navigation:** Vertically expanding stacked menu list for mobile devices.
+- **Audio Control System:** Dynamic sound triggers for clicks, hovers, and ambient loops, with a browser autoplay guard and silent fallback.
+- **GitHub Pages Ready:** Zero compilation or build configurations. All asset and layout paths are relative (`./assets/...`), allowing out-of-the-box hosting on GitHub Pages subfolder routes.
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-├── index.html            # Main portfolio landing page
+├── index.html            # Main studio hub page
+├── about.html            # Studio values, FAQ, and timeline
+├── projects.html         # Development repository catalog
+├── now.html              # Status updates page
 ├── cv.html               # Developer Curriculum Vitae page (with Print support)
 ├── 404.html              # Custom branded 404 error page
 ├── .nojekyll             # Tells GitHub Pages not to run Jekyll process
-├── assets/
-│   ├── css/
-│   │   └── styles.css    # Core stylesheets & layout definitions
-│   └── js/
-│       └── app.js        # Clock, navigation, and expand/collapse scripts
-└── README.md             # Project documentation (this file)
+└── assets/
+    ├── css/
+    │   └── styles.css    # Core stylesheets (Light & Dark theme variables)
+    ├── js/
+    │   └── app.js        # Theme manager, filters, mobile menu, and audio scripts
+    ├── audio/            # Click, hover, and ambient mp3 assets
+    ├── fonts/            # Custom web fonts
+    ├── images/           # Images and avatar graphics
+    └── icons/            # SVG vector sets
 ```
 
 ---

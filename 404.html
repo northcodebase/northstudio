@@ -10,16 +10,14 @@
     <!-- Fonts: Playfair Display, Manrope, Geist Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
 
     <!-- Core Stylesheet (Shared) -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <style>
         .error-layout {
-            min-height: calc(100vh - 180px);
+            min-height: calc(100vh - 250px);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -38,7 +36,7 @@
 
         .error-title {
             font-family: var(--font-serif);
-            font-size: 4rem;
+            font-size: clamp(2.25rem, 8vw, 4.5rem);
             font-weight: 700;
             line-height: 1.1;
             color: var(--text-black);
@@ -55,6 +53,9 @@
 </head>
 
 <body>
+    <!-- Skip to Content for Keyboard Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
     <!-- Header Navigation -->
     <header class="site-header">
         <div class="container header-container">
@@ -64,24 +65,33 @@
                 <span class="brand-mono">Error</span>
             </a>
 
-            <nav class="site-nav">
+            <!-- Mobile Hamburger Toggle -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg class="nav-toggle-icon" viewBox="0 0 24 24">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="site-nav" id="site-nav">
+                <a href="index.html" class="nav-link">[home]</a>
+                <a href="about.html" class="nav-link">[about]</a>
+                <a href="projects.html" class="nav-link">[projects]</a>
+                <a href="now.html" class="nav-link">[now]</a>
                 <a href="cv.html" class="nav-link">[cv]</a>
-                <a href="index.html#focus" class="nav-link">[focus]</a>
-                <a href="index.html#timeline" class="nav-link">[timeline]</a>
-                <a href="index.html#now" class="nav-link">[now]</a>
-                <a href="index.html#faq" class="nav-link">[faq]</a>
-                <a href="index.html#connect" class="nav-link">[connect]</a>
+                <a href="#" class="nav-link" id="theme-toggle" aria-label="Toggle visual theme">[theme]</a>
+                <a href="#" class="nav-link" id="sound-toggle" aria-label="Toggle background audio">[sound: off]</a>
             </nav>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container">
+    <main class="container" id="main-content">
         <div class="error-layout">
             <div class="error-code">[error: 404_not_found]</div>
             <h1 class="error-title">Page not found.</h1>
-            <p class="error-desc">The index could not resolve the requested location. It may have been relocated,
-                deleted, or the route spelling might be incorrect.</p>
+            <p class="error-desc">The index could not resolve the requested location. It may have been relocated, deleted, or the route spelling might be incorrect.</p>
             <a href="index.html" class="btn btn-primary">Return to Index</a>
         </div>
     </main>
@@ -89,10 +99,18 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-container">
-            <p class="footer-copy">&copy; 2026 NorthStudio. All rights reserved.</p>
-            <p class="footer-meta">Built with HTML5, CSS3, &amp; Geist Mono. Published via GitHub.</p>
+            <p class="footer-copy">NorthCodeBase // Software Studio</p>
+            <nav class="footer-meta" aria-label="Footer links">
+                <a href="https://github.com/NorthCodebase" target="_blank" rel="noopener">[github]</a>
+                <a href="mailto:northcodebase@gmail.com">[email]</a>
+                <a href="#" style="opacity: 0.5; cursor: not-allowed;" onclick="return false;">[rss]</a>
+                <span>&copy; 2026</span>
+            </nav>
         </div>
     </footer>
+
+    <!-- Application Script -->
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

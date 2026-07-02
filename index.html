@@ -4,54 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="NorthStudio - Independent software studio focused on creating clean, thoughtful desktop, web, and Android applications.">
-    <title>NorthStudio // Building Software That Feels Right.</title>
+    <meta name="description" content="NorthStudio - Independent software studio focused on creating clean, thoughtful desktop, web, and Android applications.">
+    <title>NorthStudio // Software Built With Clarity.</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://northcodebase.github.io/northstudio/">
 
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="NorthStudio">
-    <meta property="og:description"
-        content="Independent software studio focused on creating clean, thoughtful desktop, web, and Android applications.">
+    <meta property="og:title" content="NorthStudio // Software Built With Clarity">
+    <meta property="og:description" content="Independent software studio focused on creating clean, thoughtful desktop, web, and Android applications.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://northcodebase.github.io/northstudio/">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NorthStudio // Software Built With Clarity">
+    <meta name="twitter:description" content="Clean, simple, and functional desktop, web, and Android applications.">
 
     <!-- Fonts: Playfair Display, Manrope, Geist Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+    <!-- Skip to Content for Keyboard Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
     <!-- Header Navigation -->
     <header class="site-header">
         <div class="container header-container">
-            <a href="#" class="brand" aria-label="NorthStudio Home">
+            <a href="./" class="brand" aria-label="NorthStudio Home">
                 <span class="brand-playfair">NorthStudio</span>
                 <span class="brand-divider">//</span>
                 <span class="brand-mono">Studio</span>
             </a>
 
-            <nav class="site-nav">
-                <a href="cv.html" class="nav-link">[cv]</a>
-                <a href="#focus" class="nav-link">[focus]</a>
-                <a href="#timeline" class="nav-link">[timeline]</a>
-                <a href="#now" class="nav-link">[now]</a>
-                <a href="#faq" class="nav-link">[faq]</a>
-                <a href="#connect" class="nav-link">[connect]</a>
-            </nav>
+            <!-- Mobile Hamburger Toggle -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg class="nav-toggle-icon" viewBox="0 0 24 24">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
 
-            <div class="header-clock" id="header-clock" title="Local System Time">
-                00:00:00 UTC
-            </div>
+            <nav class="site-nav" id="site-nav">
+                <a href="./" class="nav-link">[home]</a>
+                <a href="about.html" class="nav-link">[about]</a>
+                <a href="projects.html" class="nav-link">[projects]</a>
+                <a href="now.html" class="nav-link">[now]</a>
+                <a href="cv.html" class="nav-link">[cv]</a>
+                <a href="#" class="nav-link" id="theme-toggle" aria-label="Toggle visual theme">[theme]</a>
+                <a href="#" class="nav-link" id="sound-toggle" aria-label="Toggle background audio">[sound: off]</a>
+            </nav>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container">
+    <main class="container" id="main-content">
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-top-meta">
@@ -59,59 +73,23 @@
                 <span class="meta-line"></span>
             </div>
 
-            <h1 class="hero-title">Building Software<br>That Feels <span class="title-serif">Right.</span></h1>
-            <p class="hero-subtitle">NorthStudio is an independent software studio focused on creating clean,
-                thoughtful desktop, web, and Android applications.</p>
+            <h1 class="hero-title">Software built<br>with <span class="title-serif">clarity.</span></h1>
+            <p class="hero-subtitle">Desktop. Web. Android.</p>
 
             <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="https://github.com" target="_blank" class="btn btn-secondary">GitHub</a>
-            </div>
-
-            <!-- Small Stats Grid -->
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <span class="stat-mono">[role]</span>
-                    <span class="stat-text">Software Engineering Student</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-mono">[ethos]</span>
-                    <span class="stat-text">Open Source</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-mono">[scope]</span>
-                    <span class="stat-text">Desktop • Web • Android</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-mono">[locale]</span>
-                    <span class="stat-text">Based in India</span>
-                </div>
-            </div>
-
-            <!-- Stack / Technologies -->
-            <div class="tech-stack-container">
-                <h4 class="tech-stack-title">Technologies</h4>
-                <div class="tech-grid">
-                    <span class="tech-item">Python</span>
-                    <span class="tech-item">TypeScript</span>
-                    <span class="tech-item">Kotlin</span>
-                    <span class="tech-item">FastAPI</span>
-                    <span class="tech-item">React</span>
-                    <span class="tech-item">SQLite</span>
-                    <span class="tech-item">GitHub</span>
-                </div>
+                <a href="projects.html" class="btn btn-primary">View Projects</a>
+                <a href="https://github.com/NorthCodebase" target="_blank" class="btn btn-secondary" rel="noopener">GitHub</a>
             </div>
         </section>
 
-        <!-- Feature Cards Section -->
-        <section class="section features-section">
+        <!-- Core Ethos / Features Section -->
+        <section class="section">
             <div class="features-grid">
                 <!-- Card 1 -->
                 <div class="feature-card">
                     <div class="card-header">
                         <span class="card-num">[01]</span>
-                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                             <line x1="9" y1="3" x2="9" y2="21"></line>
                             <line x1="15" y1="3" x2="15" y2="21"></line>
@@ -119,375 +97,90 @@
                             <line x1="3" y1="15" x2="21" y2="15"></line>
                         </svg>
                     </div>
-                    <h3 class="feature-card-title">Build</h3>
-                    <p class="feature-card-desc">Modern software designed with simplicity and usability in mind.</p>
+                    <h3 class="feature-card-title">Clean Design</h3>
+                    <p class="feature-card-desc">Interfaces engineered to do exactly what you expect. No visual clutter, no intrusive notifications.</p>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="feature-card">
                     <div class="card-header">
                         <span class="card-num">[02]</span>
-                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                            <path d="M12 6v6l4 2"></path>
                         </svg>
                     </div>
-                    <h3 class="feature-card-title">Learn</h3>
-                    <p class="feature-card-desc">Constantly exploring new technologies, tools, and software
-                        architecture.</p>
+                    <h3 class="feature-card-title">Performance</h3>
+                    <p class="feature-card-desc">Lightweight applications that load instantly and respect system memory. Static rendering wherever possible.</p>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="feature-card">
                     <div class="card-header">
                         <span class="card-num">[03]</span>
-                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="18" cy="5" r="3"></circle>
-                            <circle cx="6" cy="12" r="3"></circle>
-                            <circle cx="18" cy="19" r="3"></circle>
-                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 11.5a1.5 1.5 0 0 1-2.5 1.1 5.6 5.6 0 0 0-5 0A1.5 1.5 0 1 1 7 11.5c0-.6.3-1.1.8-1.3a1.5 1.5 0 0 1 2.2-1.5 7.4 7.4 0 0 1 4 0 1.5 1.5 0 0 1 2.2 1.5c.5.2.8.7.8 1.3z"></path>
+                            <circle cx="12" cy="12" r="10"></circle>
                         </svg>
                     </div>
-                    <h3 class="feature-card-title">Share</h3>
-                    <p class="feature-card-desc">Publishing projects and open-source work as they reach production
-                        quality.</p>
+                    <h3 class="feature-card-title">Integrity</h3>
+                    <p class="feature-card-desc">Open source development. Honest design without fake analytics, placeholders, or inflated metrics.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Featured Work (Currently Building) -->
-        <section id="projects" class="section building-section">
+        <!-- Currently Building Preview -->
+        <section class="section">
             <div class="section-header">
                 <span class="section-num">[01]</span>
                 <h2 class="section-title">Currently Building</h2>
             </div>
 
-            <div class="building-card">
-                <div class="building-card-left">
-                    <span class="building-tag">[active_development]</span>
-                    <h3 class="building-lead-title">Featured Work</h3>
+            <div class="project-card">
+                <div class="project-card-top">
+                    <div class="project-header-row">
+                        <h3 class="project-title">Featured Development Catalog</h3>
+                        <span class="project-version">Active</span>
+                    </div>
+                    <p class="project-desc">Several native utilities (NorthTracks, NorthPass) are actively being designed and refined under the studio ecosystem. I target localized execution, responsive code, and zero telemetry.</p>
                 </div>
-                <div class="building-card-right">
-                    <p class="building-desc">Several projects are in active development. The first public releases will
-                        appear here soon.</p>
-                    <p class="building-subdesc">Quality over quantity.</p>
+                <div style="margin-top: 1rem;">
+                    <a href="projects.html" class="btn btn-secondary">Explore Catalog</a>
                 </div>
             </div>
         </section>
 
-        <!-- Why NorthStudio -->
-        <section class="section why-section">
+        <!-- Philosophy Preview -->
+        <section class="section">
+            <div class="philosophy-layout">
+                <div class="philosophy-meta">[core values]</div>
+                <blockquote class="philosophy-quote">
+                    "Simplicity is a feature, not a limitation."
+                </blockquote>
+                <p class="philosophy-subquote">NorthStudio stands for quiet code: tools built with clarity, logic, and integrity.</p>
+            </div>
+        </section>
+
+        <!-- Quick Contact Section -->
+        <section class="section" style="border-bottom: none; padding-bottom: 7rem;">
             <div class="section-header">
                 <span class="section-num">[02]</span>
-                <h2 class="section-title">Why NorthStudio</h2>
-            </div>
-
-            <div class="why-grid">
-                <div class="why-card">
-                    <h3 class="why-title">Clean Design</h3>
-                    <p class="why-desc">Interfaces designed to stay out of your way.</p>
-                </div>
-                <div class="why-card">
-                    <h3 class="why-title">Performance</h3>
-                    <p class="why-desc">Fast, lightweight applications without unnecessary complexity.</p>
-                </div>
-                <div class="why-card">
-                    <h3 class="why-title">Open Source</h3>
-                    <p class="why-desc">Building in public whenever possible.</p>
-                </div>
-                <div class="why-card">
-                    <h3 class="why-title">Long-Term Thinking</h3>
-                    <p class="why-desc">Projects built to evolve, not to be rewritten every few months.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Current Focus Section -->
-        <section id="focus" class="section focus-section">
-            <div class="section-header">
-                <span class="section-num">[03]</span>
-                <h2 class="section-title">Current Focus</h2>
-            </div>
-
-            <div class="focus-grid">
-                <span class="focus-tag">Desktop Applications</span>
-                <span class="focus-tag">Android Development</span>
-                <span class="focus-tag">Software Architecture</span>
-                <span class="focus-tag">UI / UX Design</span>
-                <span class="focus-tag">Python</span>
-                <span class="focus-tag">TypeScript</span>
-                <span class="focus-tag">FastAPI</span>
-                <span class="focus-tag">SVG Icon Design</span>
-            </div>
-        </section>
-
-        <!-- Timeline Section -->
-        <section id="timeline" class="section timeline-section">
-            <div class="section-header">
-                <span class="section-num">[04]</span>
-                <h2 class="section-title">Timeline</h2>
-            </div>
-
-            <div class="timeline-grid">
-                <div class="timeline-item">
-                    <span class="timeline-year">2024</span>
-                    <p class="timeline-text">Started taking software development seriously.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-year">2025</span>
-                    <p class="timeline-text">Focused on desktop applications and modern UI.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-year">2026</span>
-                    <p class="timeline-text">Building the North ecosystem.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-year">Future</span>
-                    <p class="timeline-text">Publishing polished open-source software.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Philosophy Section -->
-        <section class="section philosophy-section">
-            <div class="philosophy-layout">
-                <div class="philosophy-meta">[philosophy]</div>
-                <blockquote class="philosophy-quote">
-                    "Good software should be intuitive, maintainable and built with purpose."
-                </blockquote>
-                <p class="philosophy-subquote">I believe simplicity is a feature, not a limitation.</p>
-            </div>
-        </section>
-
-        <!-- Now Section -->
-        <section id="now" class="section now-section">
-            <div class="section-header">
-                <span class="section-num">[05]</span>
-                <h2 class="section-title">Now</h2>
-            </div>
-
-            <div class="now-grid">
-                <div class="now-column">
-                    <h3 class="now-column-title">Currently Learning</h3>
-                    <ul class="now-list">
-                        <li>Kotlin</li>
-                        <li>FastAPI</li>
-                        <li>Software Architecture</li>
-                    </ul>
-                </div>
-
-                <div class="now-column">
-                    <h3 class="now-column-title">Currently Building</h3>
-                    <ul class="now-list">
-                        <li>NorthTracks</li>
-                        <li>NorthPass</li>
-                        <li>Northline Icons</li>
-                        <li>NorthStudio Website</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="section faq-section">
-            <div class="section-header">
-                <span class="section-num">[06]</span>
-                <h2 class="section-title">FAQ</h2>
-            </div>
-
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h4 class="faq-question">Why are there no public projects?</h4>
-                    <p class="faq-answer">Most of my current work is still in development. I'd rather publish polished
-                        software than unfinished experiments.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 class="faq-question">What technologies do you use?</h4>
-                    <p class="faq-answer">HTML, CSS, JavaScript, Python, TypeScript, Kotlin, React, FastAPI, SQLite and
-                        Git.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 class="faq-question">Do you contribute to open source?</h4>
-                    <p class="faq-answer">Yes. I enjoy building and sharing projects whenever they're ready for public
-                        use.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 class="faq-question">What's next?</h4>
-                    <p class="faq-answer">Releasing the first generation of North projects and continuously improving
-                        them over time.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="connect" class="section contact-section">
-            <div class="section-header">
-                <span class="section-num">[07]</span>
                 <h2 class="section-title">Connect</h2>
             </div>
 
             <div class="contact-grid-simple">
-                <p class="contact-lead-text">Find us or drop a line across our active platforms.</p>
-
+                <p class="contact-lead-text">Have a question or want to follow the code? Get in touch.</p>
                 <div class="contact-links-grid">
-                    <a href="https://github.com/NorthCodebase" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
+                    <a href="https://github.com/NorthCodebase" target="_blank" class="contact-link" rel="noopener">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                         </svg>
                         <span>GitHub</span>
                     </a>
 
-                    <a href="https://gitlab.com/northcodebase" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l2.87-8.83a.84.84 0 0 1 .79-.58h14.58a.84.84 0 0 1 .79.58l2.87 8.83a.84.84 0 0 1-.3.94z">
-                            </path>
-                        </svg>
-                        <span>GitLab</span>
-                    </a>
-
-                    <a href="https://stackoverflow.com/users/32898245/northcodebase" target="_blank"
-                        class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M19 11v8H5v-8m2-2h10m-8-3h6m-5-3h4"></path>
-                        </svg>
-                        <span>Stack Overflow</span>
-                    </a>
-
-                    <a href="https://x.com/northcodebase" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-                        </svg>
-                        <span>X (Twitter)</span>
-                    </a>
-
-                    <a href="https://bsky.app/profile/northcodebase.bsky.social" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M12 12c-2-2.67-4-4-6-4a4 4 0 0 0-4 4c0 3 2.5 5 6 8.5 3.5-3.5 6-5.5 6-8.5a4 4 0 0 0-4-4c-2 0-4 1.33-6 4z">
-                            </path>
-                        </svg>
-                        <span>Bluesky</span>
-                    </a>
-
-                    <a href="https://mastodon.social/@northcodebase" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M21.9 11.5c-.1-2.4-1.7-4.2-4.1-4.5-3.8-.4-7.6-.4-11.4 0-2.4.3-4 2-4.1 4.5-.3 3 .1 6 .8 9 .4 1.7 1.8 2.8 3.5 2.8h1.2c-.4-1.6-.7-3.3-.8-5H7v-2h.8c0-1 .1-2 .3-3h2.1c-.2 1-.3 2-.3 3h4c0-1-.1-2-.3-3h2.1c.2 1 .3 2 .3 3h.8v2h-1c-.1 1.7-.4 3.4-.8 5h1.2c1.7 0 3.1-1.1 3.5-2.8.7-3 1.1-6 .8-9z">
-                            </path>
-                        </svg>
-                        <span>Mastodon</span>
-                    </a>
-
-                    <a href="https://tumblr.com/northcodebase" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 11h4v3h-4v7h-3v-7H9v-3h2V7a4 4 0 0 1 4-4h3v3h-3a1 1 0 0 0-1 1v4z"></path>
-                        </svg>
-                        <span>Tumblr</span>
-                    </a>
-
-                    <a href="https://twitch.tv/northcodebase" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9H9V6h2v5zm4 0h-2V6h2v5z"></path>
-                        </svg>
-                        <span>Twitch</span>
-                    </a>
-
-                    <a href="https://pinterest.com/northcodebase" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M12 2a10 10 0 0 0-3.5 19.4c-.1-.9-.1-2.1.2-3l1.3-5.3s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.8 1.5 1.7 0 1-.6 2.6-.9 4-.3 1.2.6 2.2 1.8 2.2 2.1 0 3.7-2.2 3.7-5.5 0-2.9-2.1-4.9-5.1-4.9-3.5 0-5.5 2.6-5.5 5.3 0 1 .4 2.2 1 2.9a.3.3 0 0 1 0 .3l-.3 1.4c-.1.2-.2.3-.4.2-1.7-.8-2.8-3.3-2.8-5.3 0-4.3 3.1-8.2 9-8.2 4.7 0 8.3 3.3 8.3 7.8 0 4.7-3 8.4-7.1 8.4-1.4 0-2.7-.7-3.2-1.6l-.9 3.3c-.3 1.2-1.2 2.7-1.8 3.7A10 10 0 1 0 12 2z">
-                            </path>
-                        </svg>
-                        <span>Pinterest</span>
-                    </a>
-
-                    <a href="https://reddit.com/user/northcodebase" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path
-                                d="M17 11.5a1.5 1.5 0 0 1-2.5 1.1 5.6 5.6 0 0 0-5 0A1.5 1.5 0 1 1 7 11.5c0-.6.3-1.1.8-1.3a1.5 1.5 0 0 1 2.2-1.5 7.4 7.4 0 0 1 4 0 1.5 1.5 0 0 1 2.2 1.5c.5.2.8.7.8 1.3z">
-                            </path>
-                            <circle cx="9.5" cy="11.5" r="1"></circle>
-                            <circle cx="14.5" cy="11.5" r="1"></circle>
-                            <path d="M9.5 14.5a3 3 0 0 0 5 0"></path>
-                        </svg>
-                        <span>Reddit</span>
-                    </a>
-
-                    <a href="https://dribbble.com/northcodebase" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path
-                                d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.7 3.85m1.02 8.87c7.17-.43 10.1 2.87 11.97 6.45">
-                            </path>
-                        </svg>
-                        <span>Dribbble</span>
-                    </a>
-
-                    <a href="https://open.spotify.com/user/31d5znhl55ljyom4dqaw4pprvvvu" target="_blank"
-                        class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M8 11.5c3-1 5-1 8 0m-8 3c2.5-.75 4.5-.75 7 0m-6.5-6c3.5-1.25 6-1.25 9.5 0"></path>
-                        </svg>
-                        <span>Spotify</span>
-                    </a>
-
-                    <a href="https://vimeo.com/northcodebase" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M22 6.5c-.3 1.8-2.6 5.4-3.8 6.9-1.2 1.5-2.5 1.5-3.3.4-.6-.8-1.2-2.5-1.8-5-.7-2.6-1.5-2.6-2.1-1.3-.2.4-.7 2.6-1.4 5.8C9 16 8 16.5 7.2 15c-.6-1.1-1.6-3.2-2.2-4.5C4.2 9 3 7.8 2 7l1.7-1.5c1.4 1.1 2.3 2.5 2.8 4.2.7-2.7 1.8-6.1 4.5-6.1 2.1 0 3.2 2 3.6 5 .4 3 .8 4.3 1.6 4.3 1 0 2.2-2 2.6-4.5.4-2 .1-3-.7-3.2-.2 0-.6.1-.9.2L22 6.5z">
-                            </path>
-                        </svg>
-                        <span>Vimeo</span>
-                    </a>
-
-                    <a href="https://youtube.com/channel/UCcNfjCV0lBuddF5eVReZCGA" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25a29 29 0 0 0-.46-5.33z">
-                            </path>
-                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
-                        </svg>
-                        <span>YouTube</span>
-                    </a>
-
-                    <a href="https://orcid.org/0009-0007-8214-7223" target="_blank" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M9 16V8h2a3 3 0 0 1 0 6H9m6-6v8"></path>
-                            <circle cx="15" cy="8" r="0.5"></circle>
-                        </svg>
-                        <span>ORCID</span>
-                    </a>
-
                     <a href="mailto:northcodebase@gmail.com" class="contact-link">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                             <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
                         <span>Email</span>
@@ -500,8 +193,13 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-container">
-            <p class="footer-copy">&copy; 2026 NorthStudio. All rights reserved.</p>
-            <p class="footer-meta">Built with HTML5, CSS3, &amp; Geist Mono. Published via GitHub.</p>
+            <p class="footer-copy">NorthCodeBase // Software Studio</p>
+            <nav class="footer-meta" aria-label="Footer links">
+                <a href="https://github.com/NorthCodebase" target="_blank" rel="noopener">[github]</a>
+                <a href="mailto:northcodebase@gmail.com">[email]</a>
+                <a href="#" style="opacity: 0.5; cursor: not-allowed;" onclick="return false;">[rss]</a>
+                <span>&copy; 2026</span>
+            </nav>
         </div>
     </footer>
 

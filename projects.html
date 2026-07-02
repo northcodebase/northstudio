@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects - Software project catalog for NorthStudio. Active developments, versions, tech stack, and repository links.">
+    <title>Projects // NorthStudio - Studio Development Catalog</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://northcodebase.github.io/northstudio/projects.html">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="NorthStudio // Projects">
+    <meta property="og:description" content="Explore NorthStudio projects: NorthTracks, NorthPass, and Northline Icons. Active developments and metadata.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://northcodebase.github.io/northstudio/projects.html">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NorthStudio // Projects">
+    <meta name="twitter:description" content="Development repository catalog and metadata for NorthStudio.">
+
+    <!-- Fonts: Playfair Display, Manrope, Geist Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Skip to Content for Keyboard Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand" aria-label="NorthStudio Home">
+                <span class="brand-playfair">NorthStudio</span>
+                <span class="brand-divider">//</span>
+                <span class="brand-mono">Projects</span>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg class="nav-toggle-icon" viewBox="0 0 24 24">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="site-nav" id="site-nav">
+                <a href="index.html" class="nav-link">[home]</a>
+                <a href="about.html" class="nav-link">[about]</a>
+                <a href="projects.html" class="nav-link">[projects]</a>
+                <a href="now.html" class="nav-link">[now]</a>
+                <a href="cv.html" class="nav-link">[cv]</a>
+                <a href="#" class="nav-link" id="theme-toggle" aria-label="Toggle visual theme">[theme]</a>
+                <a href="#" class="nav-link" id="sound-toggle" aria-label="Toggle background audio">[sound: off]</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-top-meta">
+                <span class="meta-tag">[projects / catalog]</span>
+                <span class="meta-line"></span>
+            </div>
+
+            <h1 class="hero-title">Studio Catalog</h1>
+            <p class="hero-subtitle">Software built with clarity, designed to last.</p>
+        </section>
+
+        <!-- Projects List & Filters -->
+        <section class="section" style="border-bottom: none;">
+            <!-- Category Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">[all]</button>
+                <button class="filter-btn" data-filter="desktop">[desktop]</button>
+                <button class="filter-btn" data-filter="cli">[cli]</button>
+                <button class="filter-btn" data-filter="design">[design]</button>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="desktop">
+                    <div class="project-card-top">
+                        <div class="project-header-row">
+                            <h2 class="project-title">NorthTracks</h2>
+                            <span class="project-version">v0.1.0</span>
+                        </div>
+                        <p class="project-desc">A lightweight, native desktop audio player and metadata tag manager. Focuses on speed, directory-based playback, and high-fidelity format processing without large library bloat.</p>
+                        <span class="status-badge status-development">Development</span>
+                    </div>
+                    
+                    <div class="project-meta-grid">
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">Language</span>
+                            <span class="project-meta-value">Kotlin (JVM)</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">Platform</span>
+                            <span class="project-meta-value">Windows / Linux</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">License</span>
+                            <span class="project-meta-value">GPL-3.0</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">Updated</span>
+                            <span class="project-meta-value">July 2026</span>
+                        </div>
+                        <div class="project-meta-item" style="grid-column: span 2;">
+                            <span class="project-meta-label">Repository</span>
+                            <span class="project-meta-value"><a href="https://github.com/NorthCodebase/NorthTracks" target="_blank" rel="noopener">github.com/NorthCodebase/NorthTracks</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="cli">
+                    <div class="project-card-top">
+                        <div class="project-header-row">
+                            <h2 class="project-title">NorthPass</h2>
+                            <span class="project-version">v0.2.0</span>
+                        </div>
+                        <p class="project-desc">A highly secure, terminal-first password manager. Features localized GPG-encrypted database files, auto-completion, and responsive generation algorithms built to live entirely in your CLI.</p>
+                        <span class="status-badge status-testing">Testing</span>
+                    </div>
+                    
+                    <div class="project-meta-grid">
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">Language</span>
+                            <span class="project-meta-value">Python</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">Platform</span>
+                            <span class="project-meta-value">Cross-platform CLI</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">License</span>
+                            <span class="project-meta-value">MIT</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">Updated</span>
+                            <span class="project-meta-value">July 2026</span>
+                        </div>
+                        <div class="project-meta-item" style="grid-column: span 2;">
+                            <span class="project-meta-label">Repository</span>
+                            <span class="project-meta-value"><a href="https://github.com/NorthCodebase/NorthPass" target="_blank" rel="noopener">github.com/NorthCodebase/NorthPass</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-card-top">
+                        <div class="project-header-row">
+                            <h2 class="project-title">Northline Icons</h2>
+                            <span class="project-version">v1.0.0</span>
+                        </div>
+                        <p class="project-desc">A minimal, geometric SVG icon set tailored for custom software and developer user interfaces. Optimized with standard XML viewboxes for fast vector renders.</p>
+                        <span class="status-badge status-released">Released</span>
+                    </div>
+                    
+                    <div class="project-meta-grid">
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">Format</span>
+                            <span class="project-meta-value">Raw SVG Vectors</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">Platform</span>
+                            <span class="project-meta-value">Web / UI Design</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">License</span>
+                            <span class="project-meta-value">CC-BY-4.0</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="project-meta-label">Updated</span>
+                            <span class="project-meta-value">June 2026</span>
+                        </div>
+                        <div class="project-meta-item" style="grid-column: span 2;">
+                            <span class="project-meta-label">Repository</span>
+                            <span class="project-meta-value"><a href="https://github.com/NorthCodebase/Northline-Icons" target="_blank" rel="noopener">github.com/NorthCodebase/Northline-Icons</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Empty State explanation -->
+            <div class="projects-empty-state" role="status">
+                Public releases are coming soon. Current projects remain in active development while features are refined, tested, and documented.
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p class="footer-copy">NorthCodeBase // Software Studio</p>
+            <nav class="footer-meta" aria-label="Footer links">
+                <a href="https://github.com/NorthCodebase" target="_blank" rel="noopener">[github]</a>
+                <a href="mailto:northcodebase@gmail.com">[email]</a>
+                <a href="#" style="opacity: 0.5; cursor: not-allowed;" onclick="return false;">[rss]</a>
+                <span>&copy; 2026</span>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Application Script -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
